@@ -43,7 +43,38 @@
             <br><br>
         </div>
     </header>
-   
+   <!-- Código de carrossel Bootstrap -->
+    <div class="container-fluid mb-2 bg-dark-subtle text-dark-emphasis" id="conteudos">
+        <!-- Título container -->
+        <br>
+        <h3 class="text-center">PRINCIPAIS CONTEÚDOS SKEEG2</h3>
+        <br>
+        <!-- Carrosel de imagens -->
+        <div class="col-12 col-md-8 col-lg-7 mx-auto shadow-lg rounded-5 overflow-hidden">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../img/frieren.jpg" class="d-block w-100" style="height: 350px; object-fit: cover;" alt="Frieren">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/spy.jpg" class="d-block w-100" style="height: 350px; object-fit: cover;" alt="Spy x Family">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/death.jpg" class="d-block w-100" style="height: 350px; object-fit: cover;" alt="Death Note">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+        <br>
+    </div>
     <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>
