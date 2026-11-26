@@ -97,6 +97,56 @@
         </div>
         <br>
     </div>
+    <!-- Cadastro -->
+    <div class="container-fluid mb-2 bg-dark-subtle" id="cadastre">
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-5">
+                <div class="card shadow p-4 rounded-4">
+                    <h2 class="text-center mb-4">Criar Conta</h2>
+                    <!-- Validação nativa: só dispara o onsubmit se todos os campos estiverem válidos -->
+                    <form onsubmit="alert('Envio bem-sucedido! Entraremos em contato por e-mail.');">  
+                        <!-- E-mail -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="seuemail@exemplo.com"
+                                title="Por favor, insira um e-mail válido." required>
+                        </div>
+                        <!-- Nome de usuário -->
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Nome de usuário</label>
+                            <input type="text" class="form-control" id="username" name="username"
+                                minlength="3" placeholder="Mínimo 3 caracteres"
+                                title="O nome de usuário deve ter pelo menos 3 caracteres." required>
+                        </div>
+                        <!-- Senha -->
+                        <div class="mb-3">
+                            <label for="senha" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="senha"
+                                minlength="6" placeholder="Mínimo 6 caracteres"
+                                title="A senha deve ter no mínimo 6 caracteres." required>
+                        </div>
+                        <!-- Escolha de Plano -->
+                        <div class="mb-4">
+                            <label for="plano" class="form-label">Escolha de plano</label>
+                            <select class="form-select" id="plano" name="plano"
+                                    title="Selecione o plano Pessoal ou Família." required>
+                                <option value="" selected disabled>Selecione um plano...</option>
+                                <option value="pessoal">Plano Pessoal</option>
+                                <option value="familia">Plano Família</option>
+                            </select>
+                        </div>
+                        <!-- Botão de envio -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-secondary btn-lg">Criar Conta</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
     <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>
